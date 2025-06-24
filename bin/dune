@@ -1,4 +1,6 @@
 (executable
  (public_name why3-lsp)
  (name main)
- (libraries why3_lsp))
+ (libraries
+  why3
+  lsp))
