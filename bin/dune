@@ -1,6 +1,6 @@
 (executable
  (public_name why3-lsp)
  (name main)
- (libraries
-  why3
-  lsp))
+(libraries rpclib rpclib.markdown rresult)
+ (preprocess
+  (pps ppx_deriving_rpc)))
