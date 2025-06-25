@@ -1,6 +1,7 @@
 (executable
  (public_name why3-lsp)
  (name main)
-(libraries rpclib rpclib.markdown rresult)
+ (modules client lspidl server main)
+(libraries rpclib rpclib.cmdliner rpclib.json threads unix)
  (preprocess
   (pps ppx_deriving_rpc)))
